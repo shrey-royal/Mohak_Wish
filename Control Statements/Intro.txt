@@ -1,0 +1,67 @@
+Control Statements: if, if-else, switch, while, do-while, for, break, continue, return
+
+If Statement: 
+    > if (condition) {
+        // code to be executed if condition is true
+    }
+
+If-else Statement:
+    > if (condition) {
+        // code to be executed if condition is true
+    } else {
+        // code to be executed if condition is false
+    }
+
+Else-if Statement:
+    > if (condition1) {
+        // code to be executed if condition1 is true
+    } else if (condition2) {
+        // code to be executed if condition2 is true
+    } else {
+        // code to be executed if both condition1 and condition2 are false
+    }
+
+Nested if Statement:
+    > if (condition1) {
+        // code to be executed if condition1 is true
+        if (condition2) {
+            // code to be executed if condition2 is true
+        }
+    }
+
+Switch Statement:
+    > switch (expression) {
+        case value1:
+            // code to be executed if expression = value1
+            break;
+        case value2:
+            // code to be executed if expression = value2
+            break;
+        ...
+        default:
+            // code to be executed if expression is different from all values
+    }
+
+While Loop: Used when number of iterations are not known in advance.
+    > while (condition) {
+        // code to be executed
+    }
+
+Do-While Loop: Used when number of iterations are not known in advance and you want to execute the loop at least once.
+    > do {
+        // code to be executed
+    } while (condition);
+
+For Loop: Used when number of iterations are known in advance.
+    > for (initialization; condition; increment/decrement) {
+        // code to be executed
+    }
+
+Break Statement: Used to terminate a loop.
+    > break;
+
+Continue Statement: Used to skip the current iteration of a loop.
+    > continue;
+
+Return Statement: Used to return a value from a method.
+    > return value;
