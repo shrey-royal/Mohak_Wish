@@ -49,7 +49,7 @@ int main() {
     cout << "Enter a number to choose a car: ";
     int a;
     cin >> a;
-    car = (cars)a;
+    car = (cars)a;  //typecasting
 
     if (car == HONDA_CIVIC) {
         cout << "You chose Honda Civic\n";
