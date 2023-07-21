@@ -1,0 +1,14 @@
+1. Problem: Celsius to Fahrenheit Conversion
+   Write a C++ program that prompts the user to enter a temperature in Celsius and converts it to Fahrenheit. Display the converted temperature with one decimal place.
+
+2. Problem: Kilometers to Miles Conversion
+   Write a C++ program that prompts the user to enter a distance in kilometers and converts it to miles. Display the converted distance with two decimal places.
+
+3. Problem: Decimal to Binary Conversion
+   Write a C++ program that reads a decimal number from the user and converts it into its binary representation. Display the binary representation of the entered decimal number.
+
+4. Problem: Character to ASCII Conversion
+   Write a C++ program that reads a character from the user and converts it into its corresponding ASCII value. Display the ASCII value of the entered character.
+
+5. Problem: Floating-point to Integer Conversion
+   Write a C++ program that reads a floating-point number from the user and converts it into an integer. Display the converted integer.
