@@ -10,7 +10,7 @@
 
 5. Write a program that prompts the user to enter a series of numbers, terminated by a negative number. Calculate and display the average of the positive numbers entered.
 
-6. Write a program that generates the Fibonacci sequence up to a given number entered by the user. Print each number in the sequence.
+6. Write a program that generates the Fibonacci sequence up to a given number entered by the user. Print each number in the sequence. (The Fibonacci sequence is a series of numbers where each number is the sum of the two preceding numbers. The first two numbers in the sequence are 0 and 1.)
 
 7. Write a program that prompts the user to enter a year and checks whether it is a leap year or not. Display an appropriate message based on the input.
 
