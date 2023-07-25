@@ -1,0 +1,15 @@
+Q. What is OOPs? 
+A. OOPs stands for Object Oriented Programming. It is a programming methodology that uses Objects to represent data and methods to manipulate that data.
+
+Q. What is an Object?
+A. An Object is a software bundle of variables and related methods. Objects have state and behavior. It is a Physical entity. (real world entity)
+
+Q. What is a Class?
+A. A class is a blueprint or prototype from which objects are created. It is a logical entity. (not a real world entity).
+
+Q. What is the difference between a Class and an Object?
+A. A class is a blueprint or prototype from which objects are created. An object is an instance of a class. A class is a template, blueprint, or contract that defines what an object’s data fields and methods will be.
+
+Objects are real world entities. Classes are not real world entities.
+
+-> 20 objects and 20 class names
