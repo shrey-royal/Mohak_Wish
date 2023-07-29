@@ -46,6 +46,13 @@ Twist 2: If user enters 1 then you have to print the table of 6. If user enters 
 5 -> 10
 
 Twist 3: Print the multiplication table from 10 to 1.
+Output: 
+9 x 10 = 90
+9 x 9 = 81
+.
+.
+.
+9 x 1 = 9
 
 Task-3: using the same problem statement given above, here you have to print the table in reverse order and also if user enters 
 1 -> 10
