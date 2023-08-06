@@ -13,4 +13,14 @@ int main()
 /*
 Box Pattern
 Box Pattern: Hollow
+
+Triangle Pattern
+Triangle Pattern: Hollow
+
+Mirrored Triangle Pattern
+Mirrored Triangle Pattern: Hollow
+
+------------------
+kaju katri
+kaju katri: Hollow
 */
