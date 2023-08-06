@@ -1,11 +1,17 @@
 #include<stdio.h>
-int main()
-{
-    int i=1;
+int main() {
+    int i=0;
     do {
-        printf("%d,\t",i);
+        int j=0;
+        do
+        {
+            if (i==0 || i==5 || j==0 || j==5 || i == j || i == 5-j) printf("* ");
+            else printf("  ");
+            j++;
+        } while (j<=5);
+        printf("\n");
         i++;
-    } while(i<=10);
+    } while(i<=5);
     
     return 0;
 }
