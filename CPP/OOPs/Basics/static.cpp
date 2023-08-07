@@ -28,9 +28,11 @@ int main() {
     // static variable
     cout << "\nInitial Value: " << Account::count << endl;
     
-    Account caMohakBhai, caVishwaBen, caUpendraBhai;
+    Account caMohakBhai;
     cout << caMohakBhai.count << endl;
+    Account caVishwaBen;
     cout << caVishwaBen.count << endl;
+    Account caUpendraBhai;
     cout << caUpendraBhai.count << endl;
 
     // static variable
