@@ -41,4 +41,7 @@ TASSSK:
 
 5. "Design a class 'MobilePhone' to model a mobile phone owned by a person. Each phone has a unique phone number and a contact list. Write a member function 'addContact(string name, string number)' that takes a name and phone number as parameters and uses the 'this' pointer to add the contact to the current phone's contact list."
 
+Problem Statement:
+Implement a C++ function to recursively find the largest prime palindrome within a given range [L, R]. The function should take two integer inputs, L and R (1 ≤ L ≤ R ≤ 10^6), and return the largest prime palindrome within the specified range. You are not allowed to use any external libraries or pre-built functions for prime checking or palindrome testing. Your solution should utilize recursion to efficiently search for the largest prime palindrome within the given range.
+
 */
