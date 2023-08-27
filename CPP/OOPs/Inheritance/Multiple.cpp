@@ -1,52 +1,110 @@
 #include<iostream>
+#include<string>
 using namespace std;
 
-class Architects {
-    public:
-        Architects() {
-            cout << "Architects" << endl;
-        }
+class Father {
+public:
+    string name;
+    int age;
+    string sanskar[5];
 
-        void Imagine() {
-            cout << "Imagine the design..." << endl;
+    void setName(string name) {
+        this->name = name;
+    }
+
+    void setAge(int age) {
+        this->age = age;
+    }
+
+    string getName() {
+        return name;
+    }
+
+    int getAge() {
+        return age;
+    }
+
+    void setSanskar(string sanskar[]) {
+        for(int i = 0; i < 5; i++) {
+            this->sanskar[i] = sanskar[i];
         }
+    }
+
+    string* getSanskar() {
+        return sanskar;
+    }
 };
 
-class CivilEngineers : public Architects {
-    public:
-        CivilEngineers() {
-            cout << "CivilEngineers" << endl;
-        }
+class Mother {
+public:
+    string name;
+    int age;
+    string sanskar[5];
 
-        void Build() {
-            cout << "Build the design..." << endl;
+    void setName(string name) {
+        this->name = name;
+    }
+
+    void setAge(int age) {
+        this->age = age;
+    }
+
+    string getName() {
+        return name;
+    }
+
+    int getAge() {
+        return age;
+    }
+
+    void setSanskar(string sanskar[]) {
+        for(int i = 0; i < 5; i++) {
+            this->sanskar[i] = sanskar[i];
         }
+    }
+
+    string* getSanskar() {
+        return sanskar;
+    }
 };
 
-class InteriorDesigners : public Architects {
-    public:
-        InteriorDesigners() {
-            cout << "InteriorDesigners" << endl;
-        }
-
-        void Decorate() {
-            cout << "Decorate the design..." << endl;
-        }
-};
+class Child : public Father, public Mother { };
 
 int main() {
-    CivilEngineers evil;
-    InteriorDesigners id;
-    
-    evil.Imagine();
-    id.Imagine();
+    Child c;    //without mother
 
-    evil.Build();
-    id.Decorate();
+    string fatherSanskar[5] = {"Honesty", "Hardwork", "Discipline", "Simplicity", "Humility"};
+    string motherSanskar[5] = {"Love", "Care", "Kindness", "Patience", "Forgiveness"};
 
+    c.Father::setName("Vishwa");
+    c.Father::setAge(18);
+    c.Father::setSanskar(fatherSanskar);
+
+    cout << "Child's name: " << c.Father::getName() << endl;
+    cout << "Child's age: " << c.Father::getAge() << endl;
+    cout << "Child's sanskar: ";
+    for(int i = 0; i < 5; i++) {
+        cout << c.Father::getSanskar()[i] << " ";
+    }
+    cout << endl;
+
+    Child c1;   //with mother
+
+    c1.Mother::setName("Mohak");
+    c1.Mother::setAge(18);
+    c1.Mother::setSanskar(motherSanskar);
+
+    cout << "Child's name: " << c1.Mother::getName() << endl;
+    cout << "Child's age: " << c1.Mother::getAge() << endl;
+    cout << "Child's sanskar: ";
+    for(int i = 0; i < 5; i++) {
+        cout << c1.Mother::getSanskar()[i] << " ";
+    }
+    cout << endl;
 
     return 0;
 }
+
 
 /*
 
