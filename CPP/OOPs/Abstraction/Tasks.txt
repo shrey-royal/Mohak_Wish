@@ -1,0 +1,19 @@
+Using Abstract Class:
+
+Problem 1: Vehicle Information
+Create a C++ program that models different types of vehicles using an abstract class `Vehicle` and concrete subclasses `Car`, `Motorcycle`, and `Bicycle`. Implement methods to display the information of each vehicle.
+
+Problem 2: Engine Control
+Enhance the vehicle example to include methods for starting and stopping the engine of each type of vehicle. Implement these methods in the respective concrete classes.
+
+Problem 3: Race Simulation
+Simulate a race between different vehicles. Create instances of `Car`, `Motorcycle`, and `Bicycle`, and let them participate in a race. Use their maximum speeds to determine the winner.
+
+Problem 4: Polymorphism
+Demonstrate the concept of polymorphism by creating an array of pointers to the `Vehicle` class and populating it with instances of `Car`, `Motorcycle`, and `Bicycle`. Iterate through the array and call the `startEngine` and `stopEngine` methods for each vehicle.
+
+Problem 5: Vehicle Factory
+Create a simple factory pattern to produce different types of vehicles based on user input. Allow the user to specify the type of vehicle (car, motorcycle, or bicycle) and provide brand, model, and maximum speed information.
+
+Problem 6: Vehicle Inventory
+Implement a program that manages an inventory of vehicles. Create a class `Inventory` that can add, remove, and display vehicle information. Use the abstract class `Vehicle` as the base class for the vehicles stored in the inventory.
