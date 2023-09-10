@@ -1,0 +1,19 @@
+Problem 1: Calculate Factorial
+Write a C++ program to calculate the factorial of a non-negative integer entered by the user. The program should take an integer as input and output its factorial.
+
+Problem 2: Palindrome Checker
+Create a C++ program that checks whether a given string is a palindrome. The program should read a string from the user and determine if it is a palindrome (reads the same forwards and backwards) or not.
+
+Problem 3: Matrix Multiplication
+Write a C++ program that performs matrix multiplication. Prompt the user to input two matrices (A and B) and then compute their product (C). Ensure that the matrices are compatible for multiplication, and handle input errors gracefully.
+
+Problem 4: Prime Number Generator
+Develop a C++ program that generates and prints a list of prime numbers within a given range. The program should take two integers as input (start and end of the range) and print all prime numbers in that range.
+
+Problem 5: Student Grade Calculator
+Create a C++ program to calculate and display the grades of students in a class. The program should read the number of students and their corresponding scores, then calculate the average score, the highest score, and the lowest score. Finally, it should assign letter grades based on predefined grade ranges.
+
+
+Make a cpp program that will include all 5 problems. The program should have a menu that will allow the user to choose which problem to solve. The program should also have a loop that will allow the user to solve another problem after solving the first problem. The program should only end when the user chooses to exit the program.
+
+*/
