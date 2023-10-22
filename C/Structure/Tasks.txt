@@ -1,0 +1,40 @@
+1. Employee Database:
+   Design a data structure to represent employee records with fields like name, employee ID, department, and salary. Implement functions to add, update, and search for employees.
+--------------------------------------------------------------------------------------
+1. Create an Employee Database:
+   - Initialize an empty data structure, e.g., a dictionary, to store employee records. This will serve as your employee database.
+
+2. Add Employee:
+   - Create a function to add an employee to the database.
+   - Accept employee details such as name, employee ID, department, and salary as parameters.
+   - Check if the employee ID already exists in the database.
+   - If the employee ID is not already in the database, add the employee's information to the database.
+   - Return a message indicating success or failure.
+
+3. Update Employee Information:
+   - Create a function to update employee information in the database.
+   - Accept the employee ID and the fields to be updated (name, department, and/or salary) as parameters.
+   - Check if the employee ID exists in the database.
+   - If the employee exists, update the specified fields with the new information.
+   - Return a message indicating success or failure.
+
+4. Search for Employee:
+   - Create a function to search for an employee in the database.
+   - Accept the employee ID as a parameter.
+   - Check if the employee ID exists in the database.
+   - If the employee exists, return their information (name, department, and salary).
+   - If the employee is not found, return a message indicating that the employee does not exist in the database.
+
+5. Delete Employee (Optional):
+   - You can also implement a function to delete an employee from the database by providing the employee ID.
+   - Check if the employee ID exists in the database.
+   - If the employee exists, remove their record from the database.
+   - Return a message indicating success or failure.
+
+Here's a summary of the operations:
+
+1. Create the database.
+2. Add an employee.
+3. Update an employee's information.
+4. Search for an employee.
+5. (Optional) Delete an employee.
