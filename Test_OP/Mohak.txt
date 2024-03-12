@@ -1,0 +1,21 @@
+## Problem Statement: The Next Generation of Ninja
+
+The Hidden Leaf Village is creating a new Ninja Registration System to track the ever-growing number of skilled shinobi. This system needs to efficiently categorize and manage the diverse abilities of different ninja types. 
+
+**Your task:** Develop a Java program using Object-Oriented Programming (OOP) principles to design this Ninja Registration System. Here's what you need to consider:
+
+* **Inheritance:**
+    * Create a base class `Ninja` with attributes like name, rank (Genin, Chunin, Jonin), and village. 
+    * Implement methods like `train()` and `introduce()`.
+    * Utilize:
+        * Single Inheritance: Create subclasses like `GenjutsuUser`, `TaijutsuSpecialist`, and `NinjutsuMaster` that inherit from `Ninja` and have specific methods like `performGenjutsu()`, `executeTaijutsu()`, and `castNinjutsu()` respectively.
+        * Hierarchical Inheritance: Introduce a class `SharinganUser` that inherits from `GenjutsuUser` and has a unique method like `activateSharingan()`.
+* **Polymorphism:**
+    * Override the `introduce()` method in subclasses to showcase their specific abilities (e.g., GenjutsuUser introduces themself mentioning their genjutsu prowess).
+    * Allow for the creation of an `ArrayList` of `Ninja` objects. This list can hold objects of any subclass since they inherit from the base class `Ninja`.
+
+**Bonus Challenge:**
+
+* Implement interfaces like `WeaponExpert` and `MedicalNinjutsuUser` that can be used with the classes through interface inheritance. This allows a ninja to possess skills from different categories.
+
+By utilizing inheritance and polymorphism, you can create a flexible and scalable system that can accommodate the diverse range of ninja abilities in the Naruto universe.

@@ -1,0 +1,24 @@
+Problem Statement:
+
+You are tasked with designing a library management system for a public library. The system should handle the borrowing and returning of books, as well as the management of library patrons and library staff.
+
+Requirements:
+
+1. The system should have classes to represent different entities such as Book, Patron, and LibraryStaff.
+2. Each Book should have attributes such as title, author, publication year, and availability status.
+3. Patrons should be able to borrow and return books from the library. They should have attributes such as name, address, and a list of borrowed books.
+4. Library staff should have attributes such as name, employee ID, and position.
+5. The system should allow for method overloading to handle different types of book borrowing scenarios, such as borrowing for a specific duration or indefinitely.
+6. The system should also implement method overriding to handle the calculation of fines for overdue books differently for different types of patrons (e.g., regular patrons vs. premium patrons).
+7. Additionally, the system should utilize aggregation to represent the relationship between the Library and its collection of books, patrons, and staff members.
+8. The system should be able to display information such as available books, borrowed books, overdue books, and fines for each patron.
+
+Implementation:
+
+- Create classes for Book, Patron, and LibraryStaff with appropriate attributes and methods.
+- Implement method overloading for the borrowing of books, with different parameters for borrowing duration.
+- Implement method overriding for calculating fines based on the type of patron.
+- Use aggregation to represent the Library class, which contains arrays/lists of books, patrons, and staff members.
+- Implement methods in the Library class to handle book borrowing, returning, and fine calculation.
+
+By implementing the above requirements using inheritance, aggregation, method overloading, and method overriding in Java, you will create an efficient and scalable library management system capable of handling real-world scenarios in a public library setting.
