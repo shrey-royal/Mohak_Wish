@@ -6,6 +6,9 @@ interface Person {
 
     //abstract method only
     void display();
+    // static void sayMyName() {
+    //     System.out.println("NARUTO UZUMAKI");
+    // }
 }
 
 class Student implements Person {
@@ -29,6 +32,7 @@ public class InterFace {
     public static void main(String[] args) {
         Student s = new Student("Anagh", 89, 419);
         s.display();
+        // Person.sayMyName();
     }
 }
 
