@@ -83,93 +83,74 @@ String Methods:
 */
 
 /*
+String tasks: 
 
-String objects are immutable, which means that once created, their values cannot be changed.
+1. Text Analysis Tool: Develop a tool that analyzes a given text input, providing statistics such as character count, word count, average word length, and frequency of occurrence of certain words or phrases.
 
-1. Data Validation:
-   Design a Java program that validates and sanitizes user-provided email addresses, ensuring they adhere to standard email format rules (e.g., presence of '@' and '.' symbols, proper domain format).
+2. Password Strength Checker: Create a program that evaluates the strength of a password based on criteria such as length, presence of uppercase letters, lowercase letters, numbers, and special characters.
 
-2. Text Processing:
-   Create a search engine algorithm that reads and analyzes a text file, enabling users to input a word or phrase to find all occurrences and their respective positions within the document.
+3. Search Engine: Build a simple search engine that accepts a query string and returns relevant documents or web pages based on matching keywords or phrases found within the documents.
 
-3. Data Parsing:
-   Develop a CSV parser in Java that reads a comma-separated file, extracts each field, and organizes the data into usable chunks, allowing for further processing or manipulation.
+4. Data Parsing and Validation: Design a system to parse and validate data from a CSV or XML file, ensuring that each field or element meets certain formatting or validation rules before processing further.
 
-4. Encryption and Decryption:
-   Implement a Java application that encrypts sensitive user data (like passwords) using a chosen encryption algorithm and allows decryption for authorized users.
+5. Spell Checker: Implement a spell checker that can detect and suggest corrections for misspelled words in a given text, utilizing dictionaries or word lists to identify valid words.
 
-5. User Authentication:
-   Build a secure authentication system using hashed passwords in Java, where users' passwords are stored as hashes and compared during login verification.
+6. URL Shortener: Develop a URL shortening service that generates short, unique identifiers for long URLs, allowing users to share compact links while redirecting to the original URL when accessed.
 
-6. String Manipulation:
-   Create a Java program that takes a user's input and formats it into a readable sentence, ensuring proper capitalization and removing leading/trailing spaces.
+7. Text Encryption and Decryption: Create a program that encrypts and decrypts sensitive text data using cryptographic algorithms such as AES or RSA, ensuring secure communication and data storage.
 
-7. URL Manipulation:
-   Design a URL parser in Java that takes a URL string as input and separates it into its constituent parts like protocol, domain, path, and query parameters.
+8. File Renaming Tool: Build a tool that renames multiple files within a directory based on user-defined patterns or rules, such as adding prefixes or suffixes, replacing certain characters, or reformatting dates.
 
-8. Error Handling:
-   Develop a log analysis tool in Java that reads log files, extracts error messages, and categorizes them based on timestamp, error codes, and descriptions for easier debugging.
+9. String Comparison and Matching: Develop a utility for comparing strings and identifying similarities or differences between them, including functionality for fuzzy matching or finding common substrings.
 
-9. Text Analysis:
-   Build a Java application that performs sentiment analysis on user-provided text, analyzing the frequency of positive and negative words to gauge sentiment.
+10. Text-based Game or Puzzle Solver: Design a text-based game or puzzle solver that involves manipulating strings, such as solving word puzzles, anagrams, or crossword puzzles, providing hints and solutions as needed.
 
-10. Internationalization and Localization:
-    Create a Java program that manages multi-language support by enabling users to switch between languages, displaying content based on their selected language preference.
+Test Cases:
 
+1. Text Analysis Tool:
+   - Input: "This is a sample text for analysis. It contains words and punctuation marks!"
+   - Expected Output: 
+     - Character Count: 57
+     - Word Count: 10
+     - Average Word Length: 5.7
+     - Frequency of "text": 1
+     - Frequency of "analysis": 1
 
-Sample Test Cases:
+2. Password Strength Checker:
+   - Input: "P@ssw0rd"
+   - Expected Output: Strong
 
-1. Data Validation:
-   - Input: "user@example.com"
-     - Expected Output: Valid email address
-   - Input: "invalid-email"
-     - Expected Output: Invalid email address
+3. Search Engine:
+   - Query: "Java String class methods"
+   - Expected Output: Relevant documents or web pages containing information about Java's String class and its methods.
 
-2. Text Processing:
-   - Input Text: "Java is a popular programming language. Java is used for various applications."
-     - Search Query: "Java"
-     - Expected Output: Positions found at [0, 32]
+4. Data Parsing and Validation:
+   - Input: CSV file with fields (Name, Age, Email)
+   - Sample Record: "John Doe, 30, john@example.com"
+   - Expected Output: Valid records are parsed and processed; invalid records raise appropriate validation errors.
 
-3. Data Parsing:
-   - Input CSV:
-     ```
-     Name, Age, City
-     John, 25, New York
-     Emily, 30, San Francisco
-     ```
-     - Expected Output: Parsed data as a list of arrays or objects containing information for each person.
+5. Spell Checker:
+   - Input: "Mistkae in ths sentnce."
+   - Expected Output: "Mistake in this sentence."
 
-4. Encryption and Decryption:
-   - Input: "SecretPassword123"
-     - Expected Output: Encrypted/Hashed password
-     - Decryption: Ensure the decrypted password matches the original input.
+6. URL Shortener:
+   - Original URL: "https://www.example.com/very/long/url/to/test/string/class/usage"
+   - Expected Output (Shortened URL): "https://short.url/abc123"
 
-5. User Authentication:
-   - Input: Username: "user123", Password: "Password@123"
-     - Expected Output: Hashed password stored securely; successful login using the correct credentials.
+7. Text Encryption and Decryption:
+   - Input: "Sensitive data to be encrypted."
+   - Expected Output: Encrypted string using a specified algorithm; decryption should yield the original data.
 
-6. String Manipulation:
-   - Input: "   hello, world!   "
-     - Expected Output: "Hello, world!" (formatted sentence with proper capitalization and no leading/trailing spaces)
+8. File Renaming Tool:
+   - Input: Directory with files named "file1.txt", "file2.txt", etc.
+   - Expected Output: Files renamed according to user-defined patterns, such as "prefix_file1_suffix.txt".
 
-7. URL Manipulation:
-   - Input URL: "https://www.example.com/path/to/resource?param1=value1&param2=value2"
-     - Expected Output: Separated components - protocol: "https", domain: "www.example.com", path: "/path/to/resource", query parameters: {"param1": "value1", "param2": "value2"}
+9. String Comparison and Matching:
+   - Input: Two strings, "apple" and "aple"
+   - Expected Output: Identify differences, suggest "apple" as a correction.
 
-8. Error Handling:
-   - Input Log:
-     ```
-     [2023-11-30 10:15:20] ERROR: Database connection failed
-     [2023-11-30 10:20:35] ERROR: File not found
-     ```
-     - Expected Output: Extracted errors categorized by timestamp and error messages.
-
-9. Text Analysis:
-   - Input Text: "The movie was fantastic! The acting was superb."
-     - Expected Output: Sentiment analysis showing positive sentiment with word frequency analysis.
-
-10. Internationalization and Localization:
-    - Input: Select language as "French"
-      - Expected Output: Display content in French language as per the user's choice.
+10. Text-based Game or Puzzle Solver:
+    - Input: Word puzzle "C _ T"
+    - Expected Output: Possible solutions such as "CAT", "CUT", etc., based on provided hints.
 
 */
